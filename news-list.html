@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seafarer Information System</title>
+    <link rel="stylesheet" href="./Content/style.css">
+</head>
+
+<body class="inner-page">
+    <header class="header">
+        <div class="top-banner" id="topBanner">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12">
+                        <div class="top-banner-inner">
+                            <button class="close-btn" onclick="closeHeader('topBanner')">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.41 15.41" height="15"
+                                    width="15">
+                                    <line class="cls-1" x1="1" y1="1" x2="14.41" y2="14.41" fill="none" stroke="#fff"
+                                        stroke-linecap="round" stroke-miterlimit="10" stroke-width="2px" />
+                                    <line class="cls-1" x1="14.41" y1="1" x2="1" y2="14.41" fill="none" stroke="#fff"
+                                        stroke-linecap="round" stroke-miterlimit="10" stroke-width="2px" />
+                                </svg>
+                            </button>
+                            دریانورد محترم، در صورت بروز مشکل و نیاز به راهنمایی با شماره های <a
+                                href="tel:+982122802503">۲۲۸۰۲۵۰۳-۰۲۱ </a> الی ۹ تماس
+                            بگیرید.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <button type="button" class="mobile-menu-toggle" onClick="toggleMobileHeader()">
+                        <svg class="icon-open" width="20" height="14" viewBox="0 0 20 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7H19M1 1H19M1 13H19" stroke="#101828" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <svg class="icon-close" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 1L1 13M1 1L13 13" stroke="#101828" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="header-row">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg">
+                                <nav>
+                                    <ul class="menu-list">
+                                        <li class="header-menu-item is-active">
+                                            <a href="/">صفحه اصلی</a>
+                                        </li>
+                                        <li class="header-menu-item">
+                                            <a href="/">صدور اسناد</a>
+                                        </li>
+                                        <li class="header-menu-item">
+                                            <a href="/">
+                                                مستندات
+                                                <svg class="header-menu-chevron" width="12" height="7"
+                                                    viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </a>
+                                            <div class="header-tab-conainer">
+                                                <ul class="header-tabs" id="nav-tab" role="tablist">
+                                                    <li class="header-tab">
+                                                        <button type="button" class="tab-link active" id="tab-1-btn"
+                                                            data-bs-toggle="tab" data-bs-target="#tab_1" type="button"
+                                                            role="tab" aria-controls="tab_1" aria-selected="true">
+                                                            <a href="/" class="tab-link-content">
+                                                                خدمات دریایی
+                                                            </a>
+                                                            <svg class="header-menu-chevron" width="12" height="7"
+                                                                viewBox="0 0 12 7" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                        </button>
+                                                    </li>
+                                                    <li class="header-tab">
+                                                        <button type="button" class="tab-link" id="tab-2-btn"
+                                                            data-bs-toggle="tab" data-bs-target="#tab_2" type="button"
+                                                            role="tab" aria-controls="tab_2" aria-selected="false">
+                                                            <a href="/" class="tab-link-content">
+                                                                شارژ اعتبار
+                                                            </a>
+                                                            <svg class="header-menu-chevron" width="12" height="7"
+                                                                viewBox="0 0 12 7" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                        </button>
+                                                    </li>
+                                                    <li class="header-tab">
+                                                        <button type="button" class="tab-link" id="tab-3-btn"
+                                                            data-bs-toggle="tab" data-bs-target="#tab_3" type="button"
+                                                            role="tab" aria-controls="tab_3" aria-selected="false">
+                                                            <a href="/" class="tab-link-content">
+                                                                گفتگو
+                                                            </a>
+                                                            <svg class="header-menu-chevron" width="12" height="7"
+                                                                viewBox="0 0 12 7" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                        </button>
+                                                    </li>
+                                                    <li class="header-tab">
+                                                        <button type="button" class="tab-link" id="tab-4-btn"
+                                                            data-bs-toggle="tab" data-bs-target="#tab_4" type="button"
+                                                            role="tab" aria-controls="tab_4" aria-selected="false">
+                                                            <a href="/" class="tab-link-content">
+                                                                پاکت های پستی
+                                                            </a>
+                                                            <svg class="header-menu-chevron" width="12" height="7"
+                                                                viewBox="0 0 12 7" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                        </button>
+                                                    </li>
+                                                    <li class="header-tab">
+                                                        <button type="button" class="tab-link" id="tab-5-btn"
+                                                            data-bs-toggle="tab" data-bs-target="#tab_5" type="button"
+                                                            role="tab" aria-controls="tab_5" aria-selected="false">
+                                                            <a href="/" class="tab-link-content">
+                                                                مدیریت سایت
+                                                            </a>
+                                                            <svg class="header-menu-chevron" width="12" height="7"
+                                                                viewBox="0 0 12 7" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="nav-tabContent">
+                                                    <div class="tab-pane fade show active" id="tab_1" role="tabpanel"
+                                                        aria-labelledby="tab_1" tabindex="0">
+                                                        <div class="row">
+                                                            <div class="col-auto">
+                                                                <ul class="header-list">
+                                                                    <li><a href="/">
+                                                                            <svg width="7" height="12"
+                                                                                viewBox="0 0 7 12" fill="none"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path fill-rule="evenodd"
+                                                                                    clip-rule="evenodd"
+                                                                                    d="M6.72414 11.6897C6.34325 12.0896 5.71027 12.105 5.31034 11.7241L0.310342 6.96223C0.118147 6.77919 0.00660248 6.52725 0.000281537 6.26191C-0.00603988 5.99658 0.0933812 5.73961 0.276642 5.54762L5.27664 0.309526C5.65798 -0.0899724 6.29098 -0.104693 6.69047 0.276646C7.08997 0.657985 7.10469 1.29098 6.72335 1.69048L2.41461 6.2044L6.68965 10.2759C7.08958 10.6567 7.10502 11.2897 6.72414 11.6897Z"
+                                                                                    fill="currentColor" />
+                                                                            </svg>
+
+                                                                            صدور اسناد</a></li>
+                                                                    <li><a href="/">
+                                                                            <svg width="7" height="12"
+                                                                                viewBox="0 0 7 12" fill="none"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path fill-rule="evenodd"
+                                                                                    clip-rule="evenodd"
+                                                                                    d="M6.72414 11.6897C6.34325 12.0896 5.71027 12.105 5.31034 11.7241L0.310342 6.96223C0.118147 6.77919 0.00660248 6.52725 0.000281537 6.26191C-0.00603988 5.99658 0.0933812 5.73961 0.276642 5.54762L5.27664 0.309526C5.65798 -0.0899724 6.29098 -0.104693 6.69047 0.276646C7.08997 0.657985 7.10469 1.29098 6.72335 1.69048L2.41461 6.2044L6.68965 10.2759C7.08958 10.6567 7.10502 11.2897 6.72414 11.6897Z"
+                                                                                    fill="currentColor" />
+                                                                            </svg>
+
+                                                                            کارگاه ویژه دریا نوردی</a></li>
+                                                                    <li><a href="/">
+                                                                            <svg width="7" height="12"
+                                                                                viewBox="0 0 7 12" fill="none"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path fill-rule="evenodd"
+                                                                                    clip-rule="evenodd"
+                                                                                    d="M6.72414 11.6897C6.34325 12.0896 5.71027 12.105 5.31034 11.7241L0.310342 6.96223C0.118147 6.77919 0.00660248 6.52725 0.000281537 6.26191C-0.00603988 5.99658 0.0933812 5.73961 0.276642 5.54762L5.27664 0.309526C5.65798 -0.0899724 6.29098 -0.104693 6.69047 0.276646C7.08997 0.657985 7.10469 1.29098 6.72335 1.69048L2.41461 6.2044L6.68965 10.2759C7.08958 10.6567 7.10502 11.2897 6.72414 11.6897Z"
+                                                                                    fill="currentColor" />
+                                                                            </svg>
+
+                                                                            دبیرخانه رسیدگی به تخلفات</a></li>
+                                                                    <li><a href="/">
+                                                                            <svg width="7" height="12"
+                                                                                viewBox="0 0 7 12" fill="none"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path fill-rule="evenodd"
+                                                                                    clip-rule="evenodd"
+                                                                                    d="M6.72414 11.6897C6.34325 12.0896 5.71027 12.105 5.31034 11.7241L0.310342 6.96223C0.118147 6.77919 0.00660248 6.52725 0.000281537 6.26191C-0.00603988 5.99658 0.0933812 5.73961 0.276642 5.54762L5.27664 0.309526C5.65798 -0.0899724 6.29098 -0.104693 6.69047 0.276646C7.08997 0.657985 7.10469 1.29098 6.72335 1.69048L2.41461 6.2044L6.68965 10.2759C7.08958 10.6567 7.10502 11.2897 6.72414 11.6897Z"
+                                                                                    fill="currentColor" />
+                                                                            </svg>
+
+                                                                            پاکت های پستی</a></li>
+                                                                    <li><a href="/">
+                                                                            <svg width="7" height="12"
+                                                                                viewBox="0 0 7 12" fill="none"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path fill-rule="evenodd"
+                                                                                    clip-rule="evenodd"
+                                                                                    d="M6.72414 11.6897C6.34325 12.0896 5.71027 12.105 5.31034 11.7241L0.310342 6.96223C0.118147 6.77919 0.00660248 6.52725 0.000281537 6.26191C-0.00603988 5.99658 0.0933812 5.73961 0.276642 5.54762L5.27664 0.309526C5.65798 -0.0899724 6.29098 -0.104693 6.69047 0.276646C7.08997 0.657985 7.10469 1.29098 6.72335 1.69048L2.41461 6.2044L6.68965 10.2759C7.08958 10.6567 7.10502 11.2897 6.72414 11.6897Z"
+                                                                                    fill="currentColor" />
+                                                                            </svg>
+
+                                                                            کارگاه ویژه دریا نوردی</a></li>
+                                                                    <li><a href="/">
+                                                                            <svg width="7" height="12"
+                                                                                viewBox="0 0 7 12" fill="none"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path fill-rule="evenodd"
+                                                                                    clip-rule="evenodd"
+                                                                                    d="M6.72414 11.6897C6.34325 12.0896 5.71027 12.105 5.31034 11.7241L0.310342 6.96223C0.118147 6.77919 0.00660248 6.52725 0.000281537 6.26191C-0.00603988 5.99658 0.0933812 5.73961 0.276642 5.54762L5.27664 0.309526C5.65798 -0.0899724 6.29098 -0.104693 6.69047 0.276646C7.08997 0.657985 7.10469 1.29098 6.72335 1.69048L2.41461 6.2044L6.68965 10.2759C7.08958 10.6567 7.10502 11.2897 6.72414 11.6897Z"
+                                                                                    fill="currentColor" />
+                                                                            </svg>
+
+                                                                            کارگاه ویژه دریا نوردی</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="vertival-divider"></div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="header-image-container">
+                                                                    <img src="./assets/images/header-image.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <h4 class="header-tab-title">کارگاه ویژه دریا نوردی</h4>
+                                                                <p class="header-tab-paragraph">
+                                                                    به آگاهی می رساند جهت اعمال پاره ای تغییرات در
+                                                                    سامانه درگاه خدمات الکترونیکی (sp.pmo.ir)، سامانه
+                                                                    فوق در تاریخ ۱۴۰۱/۰۸/۱۶
+                                                                    از ساعت ۱۵:۰۰ به مدت یک ساعت از دسترس خارج خواهد
+                                                                    شد.راهنمای آپلود / دانلود فایلها در بستر ابری قابل
+                                                                    توجه دریانوردان
+                                                                    گرامی: جهت با فایل راهنما ضمیمه اقدام نمایید از
+                                                                    دسترس خارج خواهد شد.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="tab_2" role="tabpanel"
+                                                        aria-labelledby="tab_2" tabindex="0">2</div>
+                                                    <div class="tab-pane fade" id="tab_3" role="tabpanel"
+                                                        aria-labelledby="tab_3" tabindex="0">3
+                                                    </div>
+                                                    <div class="tab-pane fade" id="tab_4" role="tabpanel"
+                                                        aria-labelledby="tab_4" tabindex="0">4
+                                                    </div>
+                                                    <div class="tab-pane fade" id="tab_5" role="tabpanel"
+                                                        aria-labelledby="tab_5" tabindex="0">5
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header-menu-item">
+                                            <a href="/">ارتباط با ما</a>
+                                        </li>
+                                        <li class="header-menu-item">
+                                            <a href="/">
+                                                اخبار و اطلاعیه ها
+                                                <svg class="header-menu-chevron" width="12" height="7"
+                                                    viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="header-menu-item">
+                                            <a href="/">استعلام/Verify</a>
+                                        </li>
+                                        <li class="header-menu-item">
+                                            <a href="/">دبیرخانه رسیدگی به تخلفات</a>
+                                        </li>
+                                    </ul>
+                                    <div class="mobile-menu">
+                                        <div class="accordion" id="mobileHeaderAccordion">
+                                            <div class="accordion-item">
+                                                <div class="accordion-header" id="heading_1">
+                                                    <!-- <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapse_1"
+                                                            aria-expanded="true" aria-controls="collapse_1">
+                                                            <svg class="header-menu-chevron" width="12" height="7"
+                                                                viewBox="0 0 12 7" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                        </button> -->
+                                                    <a href="/">صفحه اصلی</a>
+                                                </div>
+                                                <!-- <div id="collapse_1" class="accordion-collapse collapse show"
+                                                        aria-labelledby="heading_1" data-bs-parent="#mobileHeaderAccordion">
+                                                        <div class="accordion-body">
+                                                        </div>
+                                                    </div> -->
+                                            </div>
+                                            <div class="accordion-item">
+                                                <div class="accordion-header" id="heading_2">
+                                                    <!-- <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapse_2"
+                                                            aria-expanded="false" aria-controls="collapse_2">
+                                                            <svg class="header-menu-chevron" width="12" height="7"
+                                                                viewBox="0 0 12 7" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                        </button> -->
+                                                    <a href="/">صدور اسناد</a>
+                                                </div>
+                                                <!-- <div id="collapse_2" class="accordion-collapse collapse"
+                                                        aria-labelledby="heading_2" data-bs-parent="#mobileHeaderAccordion">
+                                                        <div class="accordion-body">
+    
+                                                        </div>
+                                                    </div> -->
+                                            </div>
+                                            <div class="accordion-item">
+                                                <div class="accordion-header" id="heading_3">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse_3"
+                                                        aria-expanded="false" aria-controls="collapse_3">
+                                                        <svg class="header-menu-chevron" width="12" height="7"
+                                                            viewBox="0 0 12 7" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                                fill="currentColor" />
+                                                        </svg>
+                                                    </button>
+                                                    <a href="/">مستندات</a>
+                                                </div>
+                                                <div id="collapse_3" class="accordion-collapse collapse"
+                                                    aria-labelledby="heading_3" data-bs-parent="#mobileHeaderAccordion">
+                                                    <div class="accordion-body">
+                                                        <ul class="mobile-submenu">
+                                                            <li><a href="/">خدمات دریایی</a></li>
+                                                            <li><a href="/">شارژ اعتبار</a></li>
+                                                            <li><a href="/">گفتگو</a></li>
+                                                            <li><a href="/">پاکت های پستی</a></li>
+                                                            <li><a href="/">مدیریت سایت</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <div class="accordion-header" id="heading_4">
+                                                    <!-- <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapse_4"
+                                                            aria-expanded="false" aria-controls="collapse_4">
+                                                            <svg class="header-menu-chevron" width="12" height="7"
+                                                            viewBox="0 0 12 7" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                            fill="currentColor" />
+                                                        </svg>
+                                                    </button> -->
+                                                    <a href="/">ارتباط با ما</a>
+                                                </div>
+                                                <!-- <div id="collapse_4" class="accordion-collapse collapse"
+                                                        aria-labelledby="heading_4" data-bs-parent="#mobileHeaderAccordion">
+                                                        <div class="accordion-body">
+                                                            
+                                                        </div>
+                                                    </div> -->
+                                            </div>
+                                            <div class="accordion-item">
+                                                <div class="accordion-header" id="heading_5">
+                                                    <!-- <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapse_5"
+                                                            aria-expanded="false" aria-controls="collapse_5">
+                                                            <svg class="header-menu-chevron" width="12" height="7"
+                                                                viewBox="0 0 12 7" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                        </button> -->
+                                                    <a href="/">اخبار و اطلاعیه ها</a>
+                                                </div>
+                                                <!-- <div id="collapse_5" class="accordion-collapse collape"
+                                                        aria-labelledby="heading_5" data-bs-parent="#mobileHeaderAccordion">
+                                                        <div class="accordion-body">
+                                                           
+                                                        </div>
+                                                    </div> -->
+                                            </div>
+                                            <div class="accordion-item">
+                                                <div class="accordion-header" id="heading_6">
+                                                    <!-- <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapse_6"
+                                                            aria-expanded="false" aria-controls="collapse_6">
+                                                            <svg class="header-menu-chevron" width="12" height="7"
+                                                                viewBox="0 0 12 7" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                        </button> -->
+                                                    <a href="/">استعلام/Verify</a>
+                                                </div>
+                                                <!-- <div id="collapse_6" class="accordion-collapse collapse"
+                                                        aria-labelledby="heading_6" data-bs-parent="#mobileHeaderAccordion">
+                                                        <div class="accordion-body">
+                                                           
+                                                        </div>
+                                                    </div> -->
+                                            </div>
+                                            <div class="accordion-item">
+                                                <div class="accordion-header" id="heading_7">
+                                                    <!-- <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapse_7"
+                                                            aria-expanded="false" aria-controls="collapse_7">
+                                                            <svg class="header-menu-chevron" width="12" height="7"
+                                                                viewBox="0 0 12 7" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11.6897 0.275864C12.0896 0.65675 12.105 1.28973 11.7241 1.68966L6.96223 6.68966C6.77919 6.88185 6.52725 6.9934 6.26191 6.99972C5.99658 7.00604 5.73961 6.90662 5.54762 6.72336L0.309526 1.72336C-0.0899723 1.34202 -0.104693 0.709024 0.276646 0.309526C0.657985 -0.0899722 1.29098 -0.104693 1.69048 0.276646L6.2044 4.58539L10.2759 0.310347C10.6567 -0.0895837 11.2897 -0.105022 11.6897 0.275864Z"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                        </button> -->
+                                                    <a href="/">دبیرخانه رسیدگی به تخلفات</a>
+                                                </div>
+                                                <!-- <div id="collapse_7" class="accordion-collapse collapse"
+                                                        aria-labelledby="heading_7" data-bs-parent="#mobileHeadrAccordion">
+                                                        <div class="accordion-body">
+                                                            
+                                                        </div>
+                                                    </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <div class="search-container">
+                                    <button type="button" class="search-btn search-toggle" onclick="toggleSearch()">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.1384 0C17.28 0 22.2756 4.99563 22.2756 11.1372C22.2756 14.0348 21.1636 16.6776 19.344 18.661L22.9246 22.2341C23.2597 22.5692 23.2608 23.1113 22.9257 23.4464C22.7587 23.6157 22.538 23.6992 22.3184 23.6992C22.1 23.6992 21.8804 23.6157 21.7122 23.4487L18.0884 19.835C16.1821 21.3616 13.7651 22.2756 11.1384 22.2756C4.99678 22.2756 0 17.2788 0 11.1372C0 4.99563 4.99678 0 11.1384 0ZM11.1384 1.71553C5.94261 1.71553 1.71553 5.94146 1.71553 11.1372C1.71553 16.333 5.94261 20.5601 11.1384 20.5601C16.333 20.5601 20.5601 16.333 20.5601 11.1372C20.5601 5.94146 16.333 1.71553 11.1384 1.71553Z"
+                                                fill="#001D65" />
+                                        </svg>
+                                    </button>
+                                    <form action="" onsubmit="search()" class="search-form" id="searchForm">
+                                        <div class="row gx-2">
+                                            <div class="col-12 d-lg-none">
+                                                <label for="search" class="search-label">
+                                                    جستجو
+                                                </label>
+                                            </div>
+                                            <div class="col">
+                                                <input type="search" id="search" class="search-input">
+                                            </div>
+                                            <div class="col-auto col-lg-auto">
+                                                <button type="submit" class="search-btn">
+                                                    <svg class="d-lg-none" width="24" height="24" viewBox="0 0 24 24"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M11.1384 0C17.28 0 22.2756 4.99563 22.2756 11.1372C22.2756 14.0348 21.1636 16.6776 19.344 18.661L22.9246 22.2341C23.2597 22.5692 23.2608 23.1113 22.9257 23.4464C22.7587 23.6157 22.538 23.6992 22.3184 23.6992C22.1 23.6992 21.8804 23.6157 21.7122 23.4487L18.0884 19.835C16.1821 21.3616 13.7651 22.2756 11.1384 22.2756C4.99678 22.2756 0 17.2788 0 11.1372C0 4.99563 4.99678 0 11.1384 0ZM11.1384 1.71553C5.94261 1.71553 1.71553 5.94146 1.71553 11.1372C1.71553 16.333 5.94261 20.5601 11.1384 20.5601C16.333 20.5601 20.5601 16.333 20.5601 11.1372C20.5601 5.94146 16.333 1.71553 11.1384 1.71553Z"
+                                                            fill="#001D65" />
+                                                    </svg>
+                                                    <span class="d-none d-lg-block">جستجو</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- not loggged in links -->
+                            <div class="col-12 col-lg-auto">
+                                <div class="login-control">
+                                    <a href="/" class="btn-login">ثبت نام / ورود</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <!-- placeholder for loggged in items -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h2 class="page-title">
+                    اخبار و اطلاعیه ها
+                </h2>
+            </div>
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 news-card-container">
+                        <div class="home-section-card news-card">
+                            <div class="top-img">
+                                <img src="./assets/images/news-1.jpg" alt="">
+                            </div>
+                            <div class="important">مهم</div>
+                            <h5 class="news-card-title">
+                                قطعی سامانه درگاه خدمات
+                                الکترونیک در تاریخ ۱۴۰۱/۰۸/۱۶
+                            </h5>
+                            <p class="news-card-text">
+                                به آگاهی می رساند جهت اعمال پاره ای تغییرات در سامانه درگاه خدمات الکترونیکی
+                                (sp.pmo.ir)، سامانه فوق در تاریخ ۱۴۰۱/۰۸/۱۶
+                                از ساعت ۱۵:۰۰ به مدت یک ساعت از دسترس خارج خواهد شد.
+                            </p>
+                            <!-- you can remove this link -->
+                            <a href="" class="btn-news-card filled">
+                                مشاهده
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="28" cy="28" r="28" transform="rotate(180 28 28)" fill="#0040E0" />
+                                    <path
+                                        d="M21.8262 26.4959C21.9015 26.4186 22.186 26.0879 22.4509 25.8159C24.0044 24.1052 28.057 21.3052 30.1782 20.4506C30.5003 20.3132 31.3147 20.0226 31.7499 20.0039C32.1668 20.0039 32.5643 20.0999 32.9436 20.2946C33.4164 20.5666 33.7956 20.9946 34.0035 21.4999C34.1373 21.8506 34.3451 22.8999 34.3451 22.9186C34.5529 24.0666 34.6672 25.9319 34.6672 27.9932C34.6672 29.9572 34.5529 31.7466 34.3828 32.9119C34.3633 32.9306 34.1554 34.2346 33.9281 34.6812C33.5112 35.4972 32.6968 36.0039 31.8252 36.0039L31.7499 36.0039C31.1822 35.9839 29.9885 35.4772 29.9885 35.4586C27.9817 34.6026 24.0226 31.9399 22.4315 30.1706C22.4315 30.1706 21.9833 29.7159 21.7885 29.4319C21.4846 29.0239 21.3339 28.5186 21.3339 28.0132C21.3339 27.4492 21.504 26.9239 21.8262 26.4959Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 news-card-container">
+                        <div class="home-section-card news-card">
+                            <div class="top-img">
+                                <img src="./assets/images/news-2.jpg" alt="">
+                            </div>
+                            <div class="important">مهم</div>
+                            <h5 class="news-card-title">
+                                قطعی سامانه درگاه خدمات
+                                الکترونیک در تاریخ ۱۴۰۱/۰۸/۱۶
+                            </h5>
+                            <p class="news-card-text">
+                                به آگاهی می رساند جهت اعمال پاره ای تغییرات در سامانه درگاه خدمات الکترونیکی
+                                (sp.pmo.ir)، سامانه فوق در تاریخ ۱۴۰۱/۰۸/۱۶
+                                از ساعت ۱۵:۰۰ به مدت یک ساعت از دسترس خارج خواهد شد.
+                            </p>
+                            <!-- you can remove this link -->
+                            <a href="" class="btn-news-card">
+                                تاریخ انتشار: ۱۴۰۱/۰۸/۱۴
+                                <!-- or you can remove only the icon for link -->
+                                <svg width="90" height="90" viewBox="0 0 90 90" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="45" cy="45" r="45" transform="rotate(180 45 45)" fill="#FFEED4" />
+                                    <circle cx="45" cy="45" r="28" transform="rotate(180 45 45)" fill="#FF9900" />
+                                    <path
+                                        d="M37.4923 43.4959C37.5676 43.4186 37.8521 43.0879 38.1171 42.8159C39.6706 41.1052 43.7232 38.3052 45.8443 37.4506C46.1664 37.3132 46.9808 37.0226 47.416 37.0039C47.8329 37.0039 48.2304 37.0999 48.6097 37.2946C49.0825 37.5666 49.4618 37.9946 49.6696 38.4999C49.8034 38.8506 50.0112 39.8999 50.0112 39.9186C50.219 41.0666 50.3333 42.9319 50.3333 44.9932C50.3333 46.9572 50.219 48.7466 50.0489 49.9119C50.0294 49.9306 49.8216 51.2346 49.5943 51.6812C49.1773 52.4972 48.3629 53.0039 47.4913 53.0039L47.416 53.0039C46.8484 52.9839 45.6547 52.4772 45.6547 52.4586C43.6478 51.6026 39.6888 48.9399 38.0976 47.1706C38.0976 47.1706 37.6495 46.7159 37.4546 46.4319C37.1507 46.0239 37 45.5186 37 45.0132C37 44.4492 37.1702 43.9239 37.4923 43.4959Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 news-card-container">
+                        <div class="home-section-card news-card">
+                            <div class="top-img">
+                                <img src="./assets/images/news-3.jpg" alt="">
+                            </div>
+                            <div class="important">مهم</div>
+                            <h5 class="news-card-title">
+                                قطعی سامانه درگاه خدمات
+                                الکترونیک در تاریخ ۱۴۰۱/۰۸/۱۶
+                            </h5>
+                            <p class="news-card-text">
+                                به آگاهی می رساند جهت اعمال پاره ای تغییرات در سامانه درگاه خدمات الکترونیکی
+                                (sp.pmo.ir)، سامانه فوق در تاریخ ۱۴۰۱/۰۸/۱۶
+                                از ساعت ۱۵:۰۰ به مدت یک ساعت از دسترس خارج خواهد شد.
+                            </p>
+                            <a href="" class="btn-news-card">
+                                تاریخ انتشار: ۱۴۰۱/۰۸/۱۴
+                                <svg width="90" height="90" viewBox="0 0 90 90" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="45" cy="45" r="45" transform="rotate(180 45 45)" fill="#FFEED4" />
+                                    <circle cx="45" cy="45" r="28" transform="rotate(180 45 45)" fill="#FF9900" />
+                                    <path
+                                        d="M37.4923 43.4959C37.5676 43.4186 37.8521 43.0879 38.1171 42.8159C39.6706 41.1052 43.7232 38.3052 45.8443 37.4506C46.1664 37.3132 46.9808 37.0226 47.416 37.0039C47.8329 37.0039 48.2304 37.0999 48.6097 37.2946C49.0825 37.5666 49.4618 37.9946 49.6696 38.4999C49.8034 38.8506 50.0112 39.8999 50.0112 39.9186C50.219 41.0666 50.3333 42.9319 50.3333 44.9932C50.3333 46.9572 50.219 48.7466 50.0489 49.9119C50.0294 49.9306 49.8216 51.2346 49.5943 51.6812C49.1773 52.4972 48.3629 53.0039 47.4913 53.0039L47.416 53.0039C46.8484 52.9839 45.6547 52.4772 45.6547 52.4586C43.6478 51.6026 39.6888 48.9399 38.0976 47.1706C38.0976 47.1706 37.6495 46.7159 37.4546 46.4319C37.1507 46.0239 37 45.5186 37 45.0132C37 44.4492 37.1702 43.9239 37.4923 43.4959Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 news-card-container">
+                        <div class="home-section-card news-card">
+                            <div class="top-img">
+                                <img src="./assets/images/news-1.jpg" alt="">
+                            </div>
+                            <div class="important">مهم</div>
+                            <h5 class="news-card-title">
+                                قطعی سامانه درگاه خدمات
+                                الکترونیک در تاریخ ۱۴۰۱/۰۸/۱۶
+                            </h5>
+                            <p class="news-card-text">
+                                به آگاهی می رساند جهت اعمال پاره ای تغییرات در سامانه درگاه خدمات الکترونیکی
+                                (sp.pmo.ir)، سامانه فوق در تاریخ ۱۴۰۱/۰۸/۱۶
+                                از ساعت ۱۵:۰۰ به مدت یک ساعت از دسترس خارج خواهد شد.
+                            </p>
+                            <a href="" class="btn-news-card filled">
+                                مشاهده
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="28" cy="28" r="28" transform="rotate(180 28 28)" fill="#0040E0" />
+                                    <path
+                                        d="M21.8262 26.4959C21.9015 26.4186 22.186 26.0879 22.4509 25.8159C24.0044 24.1052 28.057 21.3052 30.1782 20.4506C30.5003 20.3132 31.3147 20.0226 31.7499 20.0039C32.1668 20.0039 32.5643 20.0999 32.9436 20.2946C33.4164 20.5666 33.7956 20.9946 34.0035 21.4999C34.1373 21.8506 34.3451 22.8999 34.3451 22.9186C34.5529 24.0666 34.6672 25.9319 34.6672 27.9932C34.6672 29.9572 34.5529 31.7466 34.3828 32.9119C34.3633 32.9306 34.1554 34.2346 33.9281 34.6812C33.5112 35.4972 32.6968 36.0039 31.8252 36.0039L31.7499 36.0039C31.1822 35.9839 29.9885 35.4772 29.9885 35.4586C27.9817 34.6026 24.0226 31.9399 22.4315 30.1706C22.4315 30.1706 21.9833 29.7159 21.7885 29.4319C21.4846 29.0239 21.3339 28.5186 21.3339 28.0132C21.3339 27.4492 21.504 26.9239 21.8262 26.4959Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 news-card-container">
+                        <div class="home-section-card news-card">
+                            <div class="top-img">
+                                <img src="./assets/images/news-2.jpg" alt="">
+                            </div>
+                            <div class="important">مهم</div>
+                            <h5 class="news-card-title">
+                                قطعی سامانه درگاه خدمات
+                                الکترونیک در تاریخ ۱۴۰۱/۰۸/۱۶
+                            </h5>
+                            <p class="news-card-text">
+                                به آگاهی می رساند جهت اعمال پاره ای تغییرات در سامانه درگاه خدمات الکترونیکی
+                                (sp.pmo.ir)، سامانه فوق در تاریخ ۱۴۰۱/۰۸/۱۶
+                                از ساعت ۱۵:۰۰ به مدت یک ساعت از دسترس خارج خواهد شد.
+                            </p>
+                            <a href="" class="btn-news-card">
+                                تاریخ انتشار: ۱۴۰۱/۰۸/۱۴
+                                <svg width="90" height="90" viewBox="0 0 90 90" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="45" cy="45" r="45" transform="rotate(180 45 45)" fill="#FFEED4" />
+                                    <circle cx="45" cy="45" r="28" transform="rotate(180 45 45)" fill="#FF9900" />
+                                    <path
+                                        d="M37.4923 43.4959C37.5676 43.4186 37.8521 43.0879 38.1171 42.8159C39.6706 41.1052 43.7232 38.3052 45.8443 37.4506C46.1664 37.3132 46.9808 37.0226 47.416 37.0039C47.8329 37.0039 48.2304 37.0999 48.6097 37.2946C49.0825 37.5666 49.4618 37.9946 49.6696 38.4999C49.8034 38.8506 50.0112 39.8999 50.0112 39.9186C50.219 41.0666 50.3333 42.9319 50.3333 44.9932C50.3333 46.9572 50.219 48.7466 50.0489 49.9119C50.0294 49.9306 49.8216 51.2346 49.5943 51.6812C49.1773 52.4972 48.3629 53.0039 47.4913 53.0039L47.416 53.0039C46.8484 52.9839 45.6547 52.4772 45.6547 52.4586C43.6478 51.6026 39.6888 48.9399 38.0976 47.1706C38.0976 47.1706 37.6495 46.7159 37.4546 46.4319C37.1507 46.0239 37 45.5186 37 45.0132C37 44.4492 37.1702 43.9239 37.4923 43.4959Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 news-card-container">
+                        <div class="home-section-card news-card">
+                            <div class="top-img">
+                                <img src="./assets/images/news-3.jpg" alt="">
+                            </div>
+                            <div class="important">مهم</div>
+                            <h5 class="news-card-title">
+                                قطعی سامانه درگاه خدمات
+                                الکترونیک در تاریخ ۱۴۰۱/۰۸/۱۶
+                            </h5>
+                            <p class="news-card-text">
+                                به آگاهی می رساند جهت اعمال پاره ای تغییرات در سامانه درگاه خدمات الکترونیکی
+                                (sp.pmo.ir)، سامانه فوق در تاریخ ۱۴۰۱/۰۸/۱۶
+                                از ساعت ۱۵:۰۰ به مدت یک ساعت از دسترس خارج خواهد شد.
+                            </p>
+                            <a href="" class="btn-news-card">
+                                تاریخ انتشار: ۱۴۰۱/۰۸/۱۴
+                                <svg width="90" height="90" viewBox="0 0 90 90" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="45" cy="45" r="45" transform="rotate(180 45 45)" fill="#FFEED4" />
+                                    <circle cx="45" cy="45" r="28" transform="rotate(180 45 45)" fill="#FF9900" />
+                                    <path
+                                        d="M37.4923 43.4959C37.5676 43.4186 37.8521 43.0879 38.1171 42.8159C39.6706 41.1052 43.7232 38.3052 45.8443 37.4506C46.1664 37.3132 46.9808 37.0226 47.416 37.0039C47.8329 37.0039 48.2304 37.0999 48.6097 37.2946C49.0825 37.5666 49.4618 37.9946 49.6696 38.4999C49.8034 38.8506 50.0112 39.8999 50.0112 39.9186C50.219 41.0666 50.3333 42.9319 50.3333 44.9932C50.3333 46.9572 50.219 48.7466 50.0489 49.9119C50.0294 49.9306 49.8216 51.2346 49.5943 51.6812C49.1773 52.4972 48.3629 53.0039 47.4913 53.0039L47.416 53.0039C46.8484 52.9839 45.6547 52.4772 45.6547 52.4586C43.6478 51.6026 39.6888 48.9399 38.0976 47.1706C38.0976 47.1706 37.6495 46.7159 37.4546 46.4319C37.1507 46.0239 37 45.5186 37 45.0132C37 44.4492 37.1702 43.9239 37.4923 43.4959Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 news-card-container">
+                        <div class="home-section-card news-card">
+                            <div class="top-img">
+                                <img src="./assets/images/news-1.jpg" alt="">
+                            </div>
+                            <div class="important">مهم</div>
+                            <h5 class="news-card-title">
+                                قطعی سامانه درگاه خدمات
+                                الکترونیک در تاریخ ۱۴۰۱/۰۸/۱۶
+                            </h5>
+                            <p class="news-card-text">
+                                به آگاهی می رساند جهت اعمال پاره ای تغییرات در سامانه درگاه خدمات الکترونیکی
+                                (sp.pmo.ir)، سامانه فوق در تاریخ ۱۴۰۱/۰۸/۱۶
+                                از ساعت ۱۵:۰۰ به مدت یک ساعت از دسترس خارج خواهد شد.
+                            </p>
+                            <a href="" class="btn-news-card filled">
+                                مشاهده
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="28" cy="28" r="28" transform="rotate(180 28 28)" fill="#0040E0" />
+                                    <path
+                                        d="M21.8262 26.4959C21.9015 26.4186 22.186 26.0879 22.4509 25.8159C24.0044 24.1052 28.057 21.3052 30.1782 20.4506C30.5003 20.3132 31.3147 20.0226 31.7499 20.0039C32.1668 20.0039 32.5643 20.0999 32.9436 20.2946C33.4164 20.5666 33.7956 20.9946 34.0035 21.4999C34.1373 21.8506 34.3451 22.8999 34.3451 22.9186C34.5529 24.0666 34.6672 25.9319 34.6672 27.9932C34.6672 29.9572 34.5529 31.7466 34.3828 32.9119C34.3633 32.9306 34.1554 34.2346 33.9281 34.6812C33.5112 35.4972 32.6968 36.0039 31.8252 36.0039L31.7499 36.0039C31.1822 35.9839 29.9885 35.4772 29.9885 35.4586C27.9817 34.6026 24.0226 31.9399 22.4315 30.1706C22.4315 30.1706 21.9833 29.7159 21.7885 29.4319C21.4846 29.0239 21.3339 28.5186 21.3339 28.0132C21.3339 27.4492 21.504 26.9239 21.8262 26.4959Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 news-card-container">
+                        <div class="home-section-card news-card">
+                            <div class="top-img">
+                                <img src="./assets/images/news-2.jpg" alt="">
+                            </div>
+                            <div class="important">مهم</div>
+                            <h5 class="news-card-title">
+                                قطعی سامانه درگاه خدمات
+                                الکترونیک در تاریخ ۱۴۰۱/۰۸/۱۶
+                            </h5>
+                            <p class="news-card-text">
+                                به آگاهی می رساند جهت اعمال پاره ای تغییرات در سامانه درگاه خدمات الکترونیکی
+                                (sp.pmo.ir)، سامانه فوق در تاریخ ۱۴۰۱/۰۸/۱۶
+                                از ساعت ۱۵:۰۰ به مدت یک ساعت از دسترس خارج خواهد شد.
+                            </p>
+                            <a href="" class="btn-news-card">
+                                تاریخ انتشار: ۱۴۰۱/۰۸/۱۴
+                                <svg width="90" height="90" viewBox="0 0 90 90" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="45" cy="45" r="45" transform="rotate(180 45 45)" fill="#FFEED4" />
+                                    <circle cx="45" cy="45" r="28" transform="rotate(180 45 45)" fill="#FF9900" />
+                                    <path
+                                        d="M37.4923 43.4959C37.5676 43.4186 37.8521 43.0879 38.1171 42.8159C39.6706 41.1052 43.7232 38.3052 45.8443 37.4506C46.1664 37.3132 46.9808 37.0226 47.416 37.0039C47.8329 37.0039 48.2304 37.0999 48.6097 37.2946C49.0825 37.5666 49.4618 37.9946 49.6696 38.4999C49.8034 38.8506 50.0112 39.8999 50.0112 39.9186C50.219 41.0666 50.3333 42.9319 50.3333 44.9932C50.3333 46.9572 50.219 48.7466 50.0489 49.9119C50.0294 49.9306 49.8216 51.2346 49.5943 51.6812C49.1773 52.4972 48.3629 53.0039 47.4913 53.0039L47.416 53.0039C46.8484 52.9839 45.6547 52.4772 45.6547 52.4586C43.6478 51.6026 39.6888 48.9399 38.0976 47.1706C38.0976 47.1706 37.6495 46.7159 37.4546 46.4319C37.1507 46.0239 37 45.5186 37 45.0132C37 44.4492 37.1702 43.9239 37.4923 43.4959Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 news-card-container">
+                        <div class="home-section-card news-card">
+                            <div class="top-img">
+                                <img src="./assets/images/news-3.jpg" alt="">
+                            </div>
+                            <div class="important">مهم</div>
+                            <h5 class="news-card-title">
+                                قطعی سامانه درگاه خدمات
+                                الکترونیک در تاریخ ۱۴۰۱/۰۸/۱۶
+                            </h5>
+                            <p class="news-card-text">
+                                به آگاهی می رساند جهت اعمال پاره ای تغییرات در سامانه درگاه خدمات الکترونیکی
+                                (sp.pmo.ir)، سامانه فوق در تاریخ ۱۴۰۱/۰۸/۱۶
+                                از ساعت ۱۵:۰۰ به مدت یک ساعت از دسترس خارج خواهد شد.
+                            </p>
+                            <a href="" class="btn-news-card">
+                                تاریخ انتشار: ۱۴۰۱/۰۸/۱۴
+                                <svg width="90" height="90" viewBox="0 0 90 90" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="45" cy="45" r="45" transform="rotate(180 45 45)" fill="#FFEED4" />
+                                    <circle cx="45" cy="45" r="28" transform="rotate(180 45 45)" fill="#FF9900" />
+                                    <path
+                                        d="M37.4923 43.4959C37.5676 43.4186 37.8521 43.0879 38.1171 42.8159C39.6706 41.1052 43.7232 38.3052 45.8443 37.4506C46.1664 37.3132 46.9808 37.0226 47.416 37.0039C47.8329 37.0039 48.2304 37.0999 48.6097 37.2946C49.0825 37.5666 49.4618 37.9946 49.6696 38.4999C49.8034 38.8506 50.0112 39.8999 50.0112 39.9186C50.219 41.0666 50.3333 42.9319 50.3333 44.9932C50.3333 46.9572 50.219 48.7466 50.0489 49.9119C50.0294 49.9306 49.8216 51.2346 49.5943 51.6812C49.1773 52.4972 48.3629 53.0039 47.4913 53.0039L47.416 53.0039C46.8484 52.9839 45.6547 52.4772 45.6547 52.4586C43.6478 51.6026 39.6888 48.9399 38.0976 47.1706C38.0976 47.1706 37.6495 46.7159 37.4546 46.4319C37.1507 46.0239 37 45.5186 37 45.0132C37 44.4492 37.1702 43.9239 37.4923 43.4959Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-header"></div>
+        <div class="footer-content">
+            <section class="footer-top">
+                <div class="container">
+                    <div class="row gx-0">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4 class="footer-menu-title">منو</h4>
+                            <ul class="footer-menu">
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">منو</a></li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">صدور اسناد</a></li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">مستندات</a></li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">ارتباط با ما</a></li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">اخبار و اطلاعیه
+                                        ها</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">استعلام/Verify</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">دبیرخانه رسیدگی به
+                                        تخلفات</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4 class="footer-menu-title">راهنما ها و نمونه سوالات آزمون</h4>
+                            <ul class="footer-menu">
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">راهنمای روال جدید
+                                        پستی</a></li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">راهنمای شرکت در
+                                        آزمون‌های
+                                        شایستگی و ...</a></li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">راهنمای درخواست صدور
+                                        اسناد دریانوردی ...</a></li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">لیست پزشکان معتمد</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">لیست کشورهای
+                                        متعاهد</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">لیست مراکز آموزشی
+                                        مجاز</a></li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">برنامه آزمون</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4 class="footer-menu-title">استعلام/Verify</h4>
+                            <ul class="footer-menu">
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">شناسنامه
+                                        دریانوردی/SID</a></li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">سند
+                                        شناسایی/Recognition</a></li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">گواهینامه
+                                        شایستگی/COC</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">گواهینامه
+                                        مهارت/COP</a>
+                                </li>
+                                <li class="footer-menu-item"><a href="" class="footer-nav-link">گواهینامه سلامت
+                                        پزشکی/Medical</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4 class="footer-menu-title">آدرس شعبه</h4>
+                            <div class="footer-map-container">
+                                <!-- Map code commes here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-middle">
+                <div class="container">
+                    <div class="row gx-0 footer-divider">
+                        <div class="col-12 col-lg-auto">
+                            <nav>
+                                <ul>
+                                    <li><a href="/">قوانین</a></li>
+                                    <li><a href="/">حریم خصوصی</a></li>
+                                    <li><a href="/">پیوند های مفید</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-12 col-lg"></div>
+                        <div class="col-12 col-lg-auto">
+                            <p>
+                                <span>شماره تماس:</span><a href="/" class="phone">۰۲۱-۳۴۵۳۴۵۰۹</a>
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-auto">
+                            <p>
+                                <span>پاسخگویی شنبه تا
+                                    چهارشنبه از
+                                    ساعت
+                                    ۸:۰۰ تا ۱۴:۰۰</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-12 col-lg-auto">
+                            <nav class="social-nav">
+                                <ul>
+                                    <li><a href="/" class="social-icon"><img src="./assets/images/instagram.svg"
+                                                alt="" /></a></li>
+                                    <li><a href="/" class="social-icon"><img src="./assets/images/whatsapp.svg"
+                                                alt="" /></a></li>
+                                    <li><a href="/" class="social-icon"><img src="./assets/images/telegram.svg"
+                                                alt="" /></a></li>
+                                    <li><a href="/" class="social-icon"><img src="./assets/images/aparat.svg"
+                                                alt="" /></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-12 col-lg-auto">
+                            <div class="view-box">
+                                <div class="row gx-0 ">
+                                    <div class="col-12 col-lg-auto">
+                                        <p>
+                                            <span>بازدید امروز:</span><span>۴۵۶۹</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-lg-auto">
+                                        <p>
+                                            <span>بازدیدکل:</span><span>۲۱۸۶۸۸۹۴۵</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg"></div>
+                        <div class="col-12 col-md-auto">
+                            <p>
+                                <span>دانلود اپلیکیشن:</span>
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-auto">
+                            <a href="/" class="store-btn"><img src="./assets/images/google-play.png"
+                                    alt="google play" /></a>
+                        </div>
+                        <div class="col-6 col-md-auto">
+                            <a href="/" class="store-btn"><img src="./assets/images/app-store.png"
+                                    alt="apple app store" /></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            © ۱۴۰۱ - تمام حقوق برای شرکت ترا محفوظ است.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script async src="./Scripts/es-module-shims.min.js"></script>
+    <script type="importmap">
+            {
+              "imports": {
+                "@popperjs/core": "./Scripts/popper.min.js",
+                "bootstrap": "./Scripts/bootstrap.esm.min.js"
+              }
+            }
+            </script>
+
+    <script type="module" src="./Scripts/main.js"></script>
+    <script type="module" src="./Scripts/main.js"></script>
+</body>
+
+</html>

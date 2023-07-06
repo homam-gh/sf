@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seafarer Information System</title>
+    <link rel="stylesheet" href="./Content/style.css">
+</head>
+
+<body class="auth-page">
+    <main class="auth-main">
+        <div class="auth-box">
+            <h2 class="auth-title">ثبت نام</h2>
+            <p class="auth-description">
+                اگر تا کنون در این پورتال و در پورتال قدیم دریانوردان ثبت نام نکرده‌اید می‌توانید با استفاده از کد ملی و
+                شماره تلفن
+                همراه خود در سامانه ثبت نام کنید.
+            </p>
+            <form action="">
+                <div class="container">
+                    <div class="form-control-container">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-3">
+                                <label class="auth-label" for="user_id">کدملی ده رقمی:</label>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <input type="text" class="form-control" id="user_id" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-control-container">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-3">
+                                <label class="auth-label" for="mobile_number">شماره موبایل:</label>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <input type="text" class="form-control" id="mobile_number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="auth-btn">ایجاد حساب کاربری</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script async src="./Scripts/es-module-shims.min.js"></script>
+    <script type="importmap">
+            {
+              "imports": {
+                "@popperjs/core": "./Scripts/popper.min.js",
+                "bootstrap": "./Scripts/bootstrap.esm.min.js"
+              }
+            }
+            </script>
+
+    <script type="module" src="./Scripts/main.js"></script>
+</body>
+
+</html>
