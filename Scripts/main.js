@@ -12,6 +12,7 @@ window.toggleMobileHeader = () => {
   const body = document.getElementsByTagName("body")[0];
   body.classList.toggle("menu-opened");
 };
+
 window.toggleThis = (currentElm, id, className) => {
   const activeState = className || "is-opened";
   const elm = document.getElementById(id);
