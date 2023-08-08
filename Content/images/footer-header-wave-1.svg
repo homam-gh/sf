@@ -9,10 +9,10 @@
         </style>
         <linearGradient id="linear-gradient" x1="857.28" y1="299.07" x2="857.28" y2="379.07"
             gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#2951b2" >
-            <stop offset="1" stop-color="#001d65" >
+            <stop offset="0" stop-color="#2951b2" />
+            <stop offset="1" stop-color="#001d65" />
         </linearGradient>
     </defs>
     <path class="cls-1" d="M942.28,379.07h-170v-80c51.18,43.29,118.83,43.29,170,0Z"
-        transform="translate(-772.28 -299.07)" >
+        transform="translate(-772.28 -299.07)" />
 </svg>
