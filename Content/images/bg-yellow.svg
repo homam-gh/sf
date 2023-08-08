@@ -12,19 +12,19 @@
         </style>
         <linearGradient id="linear-gradient" x1="567.59" y1="1574.15" x2="567.59" y2="1092.15"
             gradientTransform="matrix(1, 0, 0, -1, 287, 848)" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#f90" stop-opacity="0.1" />
-            <stop offset="1" stop-color="#fff" />
+            <stop offset="0" stop-color="#f90" stop-opacity="0.1" >
+            <stop offset="1" stop-color="#fff" >
         </linearGradient>
         <linearGradient id="linear-gradient-2" x1="567.59" y1="1414.15" x2="567.59" y2="1003.15"
             gradientTransform="matrix(1, 0, 0, -1, 287, 848)" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#f90" stop-opacity="0.26" />
-            <stop offset="1" stop-color="#fff" stop-opacity="0" />
+            <stop offset="0" stop-color="#f90" stop-opacity="0.26" >
+            <stop offset="1" stop-color="#fff" stop-opacity="0" >
         </linearGradient>
     </defs>
     <path class="cls-1"
         d="M625.72-681.26c-260.47,114-435.95,25.84-491.13-32.5v469.61h1440V-713.76c-40.06,34.67-95.14,100.74-222.38,115.54C1193.15-579.71,951.32-823.79,625.72-681.26Z"
-        transform="translate(-134.59 726.15)" />
+        transform="translate(-134.59 726.15)" >
     <path class="cls-2"
         d="M1083.45-520c260.48,113.91,436,25.81,491.14-32.47v395.29l-1440,2V-552.44C174.64-517.8,254.75-430,413.81-430,573.94-430,757.86-662.35,1083.45-520Z"
-        transform="translate(-134.59 726.15)" />
+        transform="translate(-134.59 726.15)" >
 </svg>
